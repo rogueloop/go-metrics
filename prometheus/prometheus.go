@@ -255,7 +255,7 @@ func flattenKey(parts []string, labels []metrics.Label) (string, string) {
 
 	hash := key
 	for _, label := range labels {
-		hash += fmt.Sprintf(";%s=%s", label.Name, label.Value)
+		hash += fmt.Sprintf(";%s", label.Name)
 	}
 
 	return key, hash
