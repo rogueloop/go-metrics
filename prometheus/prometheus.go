@@ -1,3 +1,4 @@
+//go:build go1.9
 // +build go1.9
 
 package prometheus
@@ -10,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/armon/go-metrics"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/push"
+	"github.com/rogueloop/go-metrics"
 )
 
 var (

@@ -5,8 +5,8 @@ package circonus
 import (
 	"strings"
 
-	"github.com/armon/go-metrics"
 	cgm "github.com/circonus-labs/circonus-gometrics"
+	"github.com/rogueloop/go-metrics"
 )
 
 // CirconusSink provides an interface to forward metrics to Circonus with
